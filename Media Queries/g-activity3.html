@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            text-align: center;
+            background-color: orange;
+            padding: 10px;
+            margin: -10px;
+            color: white;
+        }
+
+        .Menu {
+            background-color: #2d2d2d;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: -15px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        section>div {
+            background-color: white;
+            border: solid 1px orange;
+            margin-top: 15px;
+            margin-left: -7px;
+            margin-right: 7px;
+
+
+        }
+
+        section>#sport {
+            margin-right: 7px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            header {
+                background-color: blue
+                
+            }
+            section>div{
+                border: solid 1px blue;
+            }
+
+            #sport {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 360px) {
+            header {
+                background-color: red
+                
+            }
+            section>div{
+                border: solid 1px red;
+            }
+
+            #sport {
+                display: none;
+            }
+            #business{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Magazine</h1>
+        <div class="Menu">
+            <strong>Home</strong>
+            <strong>About Us</strong>
+            <strong>Contact Us</strong>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h2>Lifestyle</h2>
+            <p>
+                denoting advertising or products designed to appeal to a consumer by association with a desirable
+                lifestyle. <br>
+                modifier noun: lifestyle; modifier noun: life-style <br>
+                "the latest lifestyle trends in the retail industries"
+            </p>
+        </div>
+        <div id="business">
+            <h2>Business</h2>
+            <p>
+                refers to an enterprising entity or organization that carries out professional activities. They can be
+                commer <br>
+                cial, industrial, or others. For-profit business entities do business to earn a profit, while non-profit
+                ones <br>
+                do it for a charitable mission.
+            </p>
+        </div>
+        <div class="sports" id="sport">
+            <h2>Sports</h2>
+            <p>
+                an activity involving physical exertion and skill in which an individual or team competes against
+                another or <br>
+                others for entertainment."team sports such as baseball and soccer"
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

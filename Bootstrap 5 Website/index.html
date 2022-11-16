@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryl's Burgers</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #mainpost {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar and Brand logo -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="bburger.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bryl's Burgers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Burgers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Order Now!
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pick-up <small>(We grill while you're on your way!)</small></a></li>
+                  <li><a class="dropdown-item" href="#">Delivery</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Order for someone</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Header and brand preview -->
+
+    <div class="row bg-danger p-5 mt-5">
+        <div class="col text-center" id="mainpost">
+            <h3>Taste our new affordable yet satisfying, juicy, and lip-smacking burgers!</h3>
+            <h3>Only here at Bryl's Burgers!</h3>
+            <br />
+            <img class="img-fluid" src="burgermain.png" alt="Burger">
+            <img src="" alt="" width="">
+        </div>
+    </div>
+
+    <!-- Brand list and menu -->
+
+    <div class="row p-5 mt-5 text-success">
+        <h5>It's just beef, cheese and onions; no sauce or any other veggies. The steam from the juices of the beef and onions is locked into the buns. It's just pure, in a burger sense.</h5>
+        <p>Check out our juicy menu below to start ordering!</p>
+    </div>
+
+    <div class="row p-5 mt-5 bg-warning">
+        <div class="col-9">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Flame-grilled Burger</h5>
+                    <small>129.00 PHP</small>
+                  </div>
+                  <p class="mb-1">Your favorite juicy burger freshly grilled!</p>
+                  <small>With fries and drinks</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-around">
+                    <h5 class="mb-1">Cheesy Burger</h5>
+                    <small class="text-muted">159.00 PHP</small>
+                  </div>
+                  <p class="mb-1">Kids love this melting cheese on your favorite burger!</p>
+                  <small class="text-muted">With fries and drinks</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Mushroom Burger</h5>
+                    <small class="text-muted">139.00 PHP</small>
+                  </div>
+                  <p class="mb-1">If you're bored with just meat and cheese, then this is the one for you!</p>
+                  <small class="text-muted">With fries and drinks</small>
+                </a>
+              </div>
+        </div>
+        <div class="col-3 text-center text-success">
+            <img class="img-fluid" src="grilledburger.png" alt="Burger">
+            <p>Includes your all-time favorite grilled burger, potato fries, and a Coca-Cola drink to complete your juicy burger meal!</p>
+            <p>All for <strong>129.00 PHP</strong> only!</p>
+        </div>
+
+        <div class="row p-5 text-light bg-primary">
+            <p class="fs-6 fst-italic">*Meals on the image may appear larger than the actual product</p>
+        </div>
+        <hr />
+
+        <!-- Footer and store details -->
+
+        <div class="row p-5 bg-danger">
+            <p id="mainpost">Subscribe to our newsletter! Learn about our newest offers and juicy treats!</p>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="emailaddon">
+                    <span class="input-group-text" id="emailaddon">Subscribe</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5 bg-primary">
+            <div class="col-3">
+                <a class="navbar-brand" href="#">
+                    <img src="bburger.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Bryl's Burgers</a>
+                <hr />
+                <p class="fs-6 fst-italic">
+                Bonifacio High Street, Taguig
+                Tuesdays to Sundays, 1:00 PM to 2:00 AM
+                </p>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h3>Juicy Links</h3>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Home</a>
+                    <a href="#" class="list-group-item list-group-item-action">Careers</a>
+                    <a href="#" class="list-group-item list-group-item-action">Contact Us</a>
+                    <a href="#" class="list-group-item list-group-item-action">About Us</a>
+                    <a href="#" class="list-group-item list-group-item-action">FAQ</a>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h3>About our Burgers</h3>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Reheating Instructions</a>
+                    <a href="#" class="list-group-item list-group-item-action">Nutrition</a>
+                    <a href="#" class="list-group-item list-group-item-action">Franchising</a>
+                    <a href="#" class="list-group-item list-group-item-action">Stores Nationwide</a>
+                    <a href="#" class="list-group-item list-group-item-action">Secret Ingredient</a>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mt-3">
+                <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Order Now!
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Pick-up <small>(We grill while you're on your way!)</small></a></li>
+                      <li><a class="dropdown-item" href="#">Delivery</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Order for someone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center fs-6 fst-italic"><small>Copyright 2022</small></p>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

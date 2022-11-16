@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>Media Queries</title>
+    <style>
+        h1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            margin-top: -25px;
+            justify-content: flex-start;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .border {
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                background-color: red;
+            }
+            
+        }
+
+        @media only screen and (max-width: 600px) {
+            #business, #sports {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            h1 {
+                background-color: blue;
+            }
+        }
+        
+        @media only screen and (max-width: 768px){
+            #sports {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            h1 {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Magazine</h1>
+    <div class="nav">
+        <section>
+            Home &nbsp; &nbsp;
+        </section>
+        <section>
+            About Us &nbsp; &nbsp;
+        </section>
+        <section>
+            Contact Us
+        </section>
+    </div>
+    <div class="content">
+        <section id="lifestyle" class="border">
+            <h2>Lifestyle</h2>
+            <p>Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit, Maecenas <br />
+                sit amet pretium urna.
+            </p>
+        </section>
+        <section id="business" class="border">
+            <h2>Business</h2>
+            <p>Vivamus venenatis velit nec neque<br />
+                ultricies, eget elementum magna<br />
+                tristique.
+            </p>
+        </section>
+        <section id="sports" class="border">
+            <h2>Sports</h2>
+            <p>Quisque vehicula, risus eget aliquam<br />
+                placerat, purus leo tincidunt eros, eget<br />
+                luctus quam orci in velit.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

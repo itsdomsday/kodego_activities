@@ -1,0 +1,45 @@
+header, footer{
+    background-color: #91c42f;
+    height: 10vw;
+}
+#Nav{
+    background-color: #d2e4cf;
+    padding-left: 10em;
+    padding-right: 20em;
+}
+body{
+    background-color: #fffeff;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+;
+}
+.formAndAside{
+    background-color: #f5f4d8;
+    justify-content: flex-start;
+
+}
+.form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+button{
+    background-color: #767577;
+    padding: 1em;
+    float: right;
+    margin-top: 5em;
+}
+.flex-aside{
+    margin-left: 40em;
+    margin-left: 20em;
+    background-color: #f5f4d8;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    flex: 1 1 5rem; 
+
+
+}
